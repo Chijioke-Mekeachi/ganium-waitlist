@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --wl-bg: #070a12;
+  --wl-bg-2: #0b1020;
+  --wl-card: #0f172a;
+  --wl-border: 51 65 85;
+  --wl-text: #e5e7eb;
+  --wl-muted: #9ca3af;
+  --wl-primary: #60a5fa;
+  --wl-primary-rgb: 96 165 250;
+  --wl-success: #34d399;
+  --wl-danger: #fb7185;
+  --wl-radius-surface: 22px;
+  --wl-radius-control: 14px;
+  --wl-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+}
+
+body {
+  background: radial-gradient(1200px 800px at 20% 10%, rgba(96, 165, 250, 0.16), transparent 55%),
+    radial-gradient(900px 600px at 80% 30%, rgba(52, 211, 153, 0.10), transparent 55%),
+    linear-gradient(135deg, var(--wl-bg), var(--wl-bg-2));
+  color: var(--wl-text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+}
+
+.wl-surface {
+  background: rgba(15, 23, 42, 0.78);
+  border: 1px solid rgb(var(--wl-border) / 0.6);
+  border-radius: var(--wl-radius-surface);
+  box-shadow: var(--wl-shadow);
+  backdrop-filter: blur(10px);
+}
+
+.wl-surface-soft {
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgb(var(--wl-border) / 0.5);
+  border-radius: var(--wl-radius-surface);
+  backdrop-filter: blur(8px);
+}
+
+.wl-muted {
+  color: var(--wl-muted);
+}
+
+.wl-focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgb(var(--wl-primary-rgb) / 0.25);
+}
+
